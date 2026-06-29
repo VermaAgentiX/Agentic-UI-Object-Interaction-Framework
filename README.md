@@ -1,10 +1,9 @@
-# 🚀 Agentic UI Object Interaction (AUOI)
-An AI agent interacts directly with live UI objects through tools mehods instead of using pixels, OCR, or mouse automation.
+Introducing, An AI agent framework interacts directly with live UI objects through tools mehods instead of using pixels, OCR, or mouse automation.
 
 
 <p align="center">
 
-<h1 align="center">Agentic UI Object Interaction (AUOI)</h1>
+<h1 align="center">🚀 Agentic UI Object Interaction (AUOI)</h1>
 
 <h3 align="center">
 A New Paradigm for AI-Native Desktop Applications
