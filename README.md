@@ -780,6 +780,149 @@ The entire vision stack disappears.
 
 ---
 
+
+# 🌐 Multi-Modal AI Integration
+
+AUOI is **input-agnostic**.
+
+It does not depend on how the user communicates with the AI agent. Any intelligent input modality can be connected to the same AUOI runtime.
+
+```text
+                Human
+                   │
+      ┌────────────┼─────────────┐
+      ▼            ▼             ▼
+ Voice Input   Hand Gestures   Camera
+      │            │             │
+      └────────────┼─────────────┘
+                   ▼
+          Speech / Vision Models
+                   │
+                   ▼
+               AI Agent (LLM)
+                   │
+                   ▼
+                   AUOI
+                   │
+                   ▼
+            Object-Level Interface
+                   │
+                   ▼
+            Qt / React / Flutter
+```
+
+---
+
+## Supported Input Modalities
+
+AUOI can be integrated with virtually any AI-powered input system, including:
+
+### 🎤 Voice Interaction
+
+Users can control applications using natural language.
+
+Example:
+
+> "Make the application fullscreen."
+
+↓
+
+```text
+Speech Recognition
+        ↓
+     AI Agent
+        ↓
+      AUOI
+        ↓
+window.showFullScreen()
+```
+
+---
+
+### ✋ Hand Gesture Recognition
+
+Computer vision models can recognize gestures and translate them into application actions.
+
+Examples:
+
+* Swipe Left
+* Swipe Right
+* Pinch
+* Open Palm
+* Pointing
+* Finger Tracking
+
+The AI interprets the gesture and performs structured UI actions through AUOI.
+
+---
+
+### 📷 Computer Vision
+
+Vision models can analyze the user's environment and instruct the application accordingly.
+
+Examples:
+
+* Face detection
+* Emotion recognition
+* Object detection
+* Pose estimation
+* Eye tracking
+* Head movement
+
+Instead of directly clicking UI elements, the vision model communicates with the AI agent, which then interacts with the application through AUOI.
+
+---
+
+### ⌨️ Keyboard and Mouse
+
+Traditional input devices remain fully supported.
+
+Keyboard shortcuts or mouse actions can also trigger AI-assisted workflows.
+
+---
+
+### 🧠 Brain-Computer Interfaces (Future)
+
+Future BCI technologies could issue commands directly to AI agents, allowing AUOI-enabled applications to respond without traditional input devices.
+
+---
+
+### 🤖 Multiple AI Agents
+
+Different AI agents can collaborate on the same interface.
+
+Example:
+
+```text
+Voice Agent
+      │
+Vision Agent
+      │
+Monitoring Agent
+      │
+Automation Agent
+      │
+      ▼
+      AUOI
+      │
+      ▼
+ Intelligent Application
+```
+
+---
+
+# AUOI as an Interaction Layer
+
+AUOI is **not** a replacement for voice recognition, computer vision, or gesture recognition.
+
+Instead, it acts as a **unified interaction layer** that connects intelligent AI agents to graphical applications.
+
+Any AI capable of understanding user intent can leverage AUOI to safely and efficiently manipulate live UI objects.
+
+This makes AUOI compatible with existing and future AI technologies without requiring changes to the underlying application architecture.
+
+
+
 # Mission Statement
 
 > **To establish AUOI as the universal object-level interaction standard between AI agents and graphical user interfaces, enabling the next generation of AI-native software.**
