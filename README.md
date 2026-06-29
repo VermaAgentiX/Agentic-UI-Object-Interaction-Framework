@@ -28,6 +28,8 @@ This approach enables intelligent, deterministic, fast, and scalable desktop aut
 
 ---
 
+
+
 # Why AUOI?
 
 Current AI desktop agents work like humans.
@@ -69,6 +71,86 @@ UI Controller
     ▼
 Qt Widget Objects
 ```
+
+
+## ⚙️ Runtime Workflow
+
+AUOI separates the graphical user interface from the AI agent while allowing both to communicate through a shared **UI Controller**. The GUI always runs on the **Qt Main Thread**, while the AI agent executes independently in a background thread.
+
+```text
+                    Main Thread
+                         │
+                  QApplication.exec()
+                         │
+                  Qt Event Loop
+               ┌─────────┴─────────┐
+               │                   │
+               ▼                   ▼
+        Main Window          Agent Thread
+                                  │
+                             LangGraph
+                                  │
+                               ToolNode
+                                  │
+                               UI Tools
+                                  │
+                            UIController
+                                  │
+                                  ▼
+                            Main Window
+```
+
+### Execution Flow
+
+1. The user interacts with the application.
+2. The request is sent to the **LangGraph Agent** running in a background thread.
+3. The LLM decides whether a UI tool is required.
+4. If needed, the corresponding UI tool is invoked.
+5. The tool forwards the request to the **UIController**.
+6. The **UIController** validates the request and dispatches it to the appropriate Qt widget.
+7. The Qt Event Loop updates the interface immediately.
+
+This architecture keeps the interface responsive while the AI agent is reasoning, generating responses, or executing tools.
+
+### Example
+
+```text
+User
+   │
+   ▼
+"Change the button text to Start"
+   │
+   ▼
+LangGraph Agent
+   │
+   ▼
+ui_action(
+    widget="pushButton",
+    action="set_text",
+    value="Start"
+)
+   │
+   ▼
+UIController
+   │
+   ▼
+pushButton.setText("Start")
+   │
+   ▼
+Qt Event Loop
+   │
+   ▼
+Updated Interface
+```
+
+### Why Separate Threads?
+
+* ✅ The GUI never freezes while the LLM is thinking.
+* ✅ Long-running tool execution does not block the interface.
+* ✅ All widget updates are performed safely through the Qt event loop.
+* ✅ Scales naturally to multiple AI agents, background tasks, and real-time UI updates.
+
+
 
 No screenshots.
 
