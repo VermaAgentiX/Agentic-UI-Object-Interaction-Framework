@@ -5,7 +5,7 @@
 <h1 align="center">🚀 Agentic UI Object Interaction (AUOI)</h1>
 
 <h3 align="center">
-A New Paradigm for AI-Native Desktop Applications
+A New Paradigm for AI-Native Desktop Systems
 </h3>
 
 <p align="center">
