@@ -18,7 +18,7 @@ Empowering AI Agents to interact directly with live UI objects instead of screen
 ---
 
 ## 📖 Overview
-Introducing, An AI agent framework interacts directly with live UI objects through tools mehods instead of using pixels, OCR, or mouse automation.
+Introducing, An AI agent framework interacts directly with live UI objects through tools methods instead of using pixels, OCR, or mouse automation.
 
 **Agentic UI Object Interaction (AUOI)** is a new interaction paradigm where AI agents communicate directly with graphical user interface (GUI) objects rather than controlling applications through mouse movements, keyboard simulation, screenshots, or computer vision.
 
