@@ -921,6 +921,134 @@ Any AI capable of understanding user intent can leverage AUOI to safely and effi
 
 This makes AUOI compatible with existing and future AI technologies without requiring changes to the underlying application architecture.
 
+# Complete WorkFlow
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│                              USER                                          │
+│      • Natural Language                                                    │
+│      • Voice                                                               │
+│      • Mouse / Keyboard                                                    │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                 Agent Intelligence Layer                                   │
+│                                                                            │
+│  • LLM                                                                      │
+│  • LangGraph Planner                                                        │
+│  • Multi-Agent Coordination                                                 │
+│  • MCP Tools                                                                │
+│  • Memory / Context                                                         │
+│  • Task Planning                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│               AUOI Semantic Interaction Layer                              │
+│                                                                            │
+│  • Object Discovery                                                         │
+│  • Widget Selection                                                         │
+│  • Semantic Tool Invocation                                                 │
+│  • State Tracking                                                           │
+│  • Object Relationships                                                     │
+│  • Permission & Safety                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│             Interactive Execution Transparency Layer                       │
+│                                                                            │
+│  ✓ Highlight Widgets                                                       │
+│  ✓ Hover Effects                                                           │
+│  ✓ Click Animation                                                         │
+│  ✓ Slider Movement                                                         │
+│  ✓ Progress Bars                                                           │
+│  ✓ Focus Ring                                                              │
+│  ✓ Agent Cursor                                                            │
+│  ✓ Typing Animation                                                        │
+│  ✓ Window Navigation                                                       │
+│  ✓ Execution Timeline                                                      │
+│  ✓ Live Status Feedback                                                    │
+│                                                                            │
+│  (Shows the user exactly what the AI is doing in real time.)               │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│              UI Composition & Rendering Layer                              │
+│                                                                            │
+│  • React Components                                                        │
+│  • Tailwind CSS                                                            │
+│  • Framer Motion                                                           │
+│  • Glassmorphism Widgets                                                   │
+│  • Sci-Fi HUD Components                                                   │
+│  • Dashboard Layout                                                        │
+│  • Widget Library                                                          │
+│  • Theme Engine                                                            │
+│                                                                            │
+│  Rendered by:                                                              │
+│      QWebEngineView / Browser                                              │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   ▲
+                                   │
+┌────────────────────────────────────────────────────────────────────────────┐
+│                GUI Design & Component Pipeline                             │
+│                                                                            │
+│  Figma                                                                      │
+│      │                                                                      │
+│      ▼                                                                      │
+│  Figma Make / AI UI Generation                                              │
+│      │                                                                      │
+│      ▼                                                                      │
+│  Reusable Widget Library                                                    │
+│      │                                                                      │
+│      ▼                                                                      │
+│  Dashboard Composition                                                      │
+│      │                                                                      │
+│      ▼                                                                      │
+│  React / HTML / CSS / Tailwind                                              │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                  Backend Logic Layer                                       │
+│                                                                            │
+│  • Business Logic                                                          │
+│  • Python Services                                                         │
+│  • LangGraph Nodes                                                         │
+│  • Tool Functions                                                          │
+│  • Event Dispatcher                                                        │
+│  • State Manager                                                           │
+│  • AI Services                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                Framework Communication Layer                               │
+│                                                                            │
+│  • Qt WebChannel                                                           │
+│  • Event Bus                                                               │
+│  • Signals / Slots                                                         │
+│  • JSON Messaging                                                          │
+│  • State Synchronization                                                   │
+│                                                                            │
+│  React  ⇄  Python                                                          │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                  System Execution Layer                                    │
+│                                                                            │
+│  • Windows API                                                             │
+│  • Linux API                                                               │
+│  • File System                                                             │
+│  • Database                                                                │
+│  • Cloud APIs                                                              │
+│  • Browser                                                                 │
+│  • Hardware                                                                 │
+│  • External Applications                                                   │
+└────────────────────────────────────────────────────────────────────────────┘
+
 
 
 # Mission Statement
