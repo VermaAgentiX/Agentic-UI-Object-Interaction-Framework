@@ -1,0 +1,37 @@
+{
+    "timestamp": "2026-06-23 15:29:21.331742 UTC",
+    "sender": "Machine",
+    "sender_name": "AI",
+    "session_id": "b155d4b2-945b-4f36-807c-ba610bcb6bc0",
+    "context_id": "",
+    "text": "abhishek",
+    "files": [],
+    "error": false,
+    "edit": false,
+    "properties": {
+        "text_color": null,
+        "background_color": null,
+        "edited": false,
+        "source": {
+            "id": "ChatInput-DX1qg",
+            "display_name": "Chat Input",
+            "source": "Chat Input"
+        },
+        "icon": null,
+        "allow_markdown": false,
+        "positive_feedback": null,
+        "state": "complete",
+        "targets": [],
+        "usage": null,
+        "build_duration": null
+    },
+    "category": "message",
+    "content_blocks": [],
+    "session_metadata": {
+        "graph_run_id": "94f0cf9a-f474-463b-900d-c0261d8347d5"
+    },
+    "id": "b3ce5a92-b315-492e-b2c4-daabd2940b0d",
+    "flow_id": "b155d4b2-945b-4f36-807c-ba610bcb6bc0",
+    "run_id": "94f0cf9a-f474-463b-900d-c0261d8347d5",
+    "duration": null
+}
